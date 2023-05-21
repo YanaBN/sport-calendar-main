@@ -1,0 +1,43 @@
+.reminder {
+  background-color: #131517;
+  border-radius: 15px;
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-direction: column;
+
+  &__title {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+  }
+  &__text {
+    color: rgba(255, 255, 255, 0.458);
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    display: block;
+    background-color: transparent !important;
+    color: #008e8a !important;
+    border: 1.5px solid #008e8a;
+    padding: 0 35px;
+    height: 45px !important;
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

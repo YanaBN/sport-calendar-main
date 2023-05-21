@@ -1,0 +1,64 @@
+.header {
+  color: white;
+  padding: 20px 10px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    line-height: 23px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__date {
+    color: rgba(255, 255, 255, 0.637);
+  }
+  &__user {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: -10px;
+    cursor: pointer;
+    &_name {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    &_role {
+      margin-top: 10px;
+      text-align: end;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.458);
+    }
+    &_img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 20px 20px;
+    &__user {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 20px 70px;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="calendar">
+  <app-shared-calendar></app-shared-calendar>
+  <div class="calendar__box">
+    <h3 class="calendar__title">Розклад</h3>
+    <a
+      matRipple
+      [matRippleColor]="'rgba(255, 255, 255, 0.1)'"
+      routerLink="/calendar"
+      class="calendar__link"
+      >View all</a
+    >
+  </div>
+  <div class="calendar__events" *ngIf="events.length">
+    <app-event-item *ngFor="let item of events" [event]="item"></app-event-item>
+  </div>
+  <div class="calendar__empty" *ngIf="!events.length">
+    На сьгодні немає подій
+  </div>
+</div>
